@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dRSEavFu5jDORkR7ldUia/U5JSnh9k7MpxNYq38gNHEPdk1+lLXFdDOkoTxfDQrTqj4tFQB59OutY44opEOlwg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Сергей\\Desktop\\ParkingAnalysisApplication\\ClassLibrary\\ClassLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Сергей\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

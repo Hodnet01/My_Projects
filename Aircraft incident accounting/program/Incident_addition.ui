@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>756</width>
+    <height>770</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>756</width>
+    <height>770</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>741</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>722</width>
+      <height>846</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Время (ЧЧ-ММ-СС)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="time"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Широта</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Долгота</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Этап полёта</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="latitude"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="longitude"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="flight_part"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Число пострадавших на земле                            </string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="injured_on_ground"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="Label">
+         <property name="text">
+          <string>Перелёт</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="flight"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="Label_2">
+         <property name="text">
+          <string>Дата</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="flightdate"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="Label_3">
+         <property name="text">
+          <string>Время</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="flighttime"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="Label_4">
+         <property name="text">
+          <string>Рейс</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="airline"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="Label_5">
+         <property name="text">
+          <string>Аэропорт отправления</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QComboBox" name="out_airport"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="Label_6">
+         <property name="text">
+          <string>Аэропорт назначения</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QComboBox" name="to_airport"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="Label_7">
+         <property name="text">
+          <string>Цифровой код</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="digital_code"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="Label_8">
+         <property name="text">
+          <string>Авиакомпания</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QComboBox" name="aircompany"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="Label_9">
+         <property name="text">
+          <string>Техник</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QComboBox" name="technician"/>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="Label_10">
+         <property name="text">
+          <string>Паспортные данные</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLineEdit" name="passport_number"/>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="Label_11">
+         <property name="text">
+          <string>Фамилия</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLineEdit" name="second_name"/>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="Label_12">
+         <property name="text">
+          <string>Имя</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QLineEdit" name="first_name"/>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="Label_13">
+         <property name="text">
+          <string>Отчество</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLineEdit" name="patronymic"/>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="Label_14">
+         <property name="text">
+          <string>Дата рождения (ГГГГ-ММ-ДД)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QLineEdit" name="birthdate"/>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="Label_15">
+         <property name="text">
+          <string>Борт</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QComboBox" name="board"/>
+       </item>
+       <item row="15" column="0">
+        <widget class="QLabel" name="Label_16">
+         <property name="text">
+          <string>Бортовой номер (AA00000)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="1">
+        <widget class="QLineEdit" name="board_number"/>
+       </item>
+       <item row="16" column="0">
+        <widget class="QLabel" name="Label_17">
+         <property name="text">
+          <string>Модель</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="1">
+        <widget class="QComboBox" name="model"/>
+       </item>
+       <item row="17" column="0">
+        <widget class="QLabel" name="Label_18">
+         <property name="text">
+          <string>Дата введения в эксплуатацию (ГГГГ-ММ-ДД)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="1">
+        <widget class="QLineEdit" name="date_comission"/>
+       </item>
+       <item row="18" column="0">
+        <widget class="QLabel" name="Label_19">
+         <property name="text">
+          <string>Страна регистрации</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="1">
+        <widget class="QComboBox" name="country"/>
+       </item>
+       <item row="19" column="0">
+        <widget class="QLabel" name="Label_20">
+         <property name="text">
+          <string>Причина</string>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="1">
+        <widget class="QLineEdit" name="reason"/>
+       </item>
+       <item row="20" column="0">
+        <widget class="QLabel" name="Label_21">
+         <property name="text">
+          <string>Описание</string>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="1">
+        <widget class="QPlainTextEdit" name="description"/>
+       </item>
+       <item row="21" column="0">
+        <widget class="QLabel" name="Label_22">
+         <property name="text">
+          <string>Тип ошибки</string>
+         </property>
+        </widget>
+       </item>
+       <item row="21" column="1">
+        <widget class="QComboBox" name="type_of_mistake"/>
+       </item>
+       <item row="22" column="0">
+        <widget class="QLabel" name="Label_23">
+         <property name="text">
+          <string>Объяснительная</string>
+         </property>
+        </widget>
+       </item>
+       <item row="22" column="1">
+        <widget class="QPlainTextEdit" name="explanation"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Введите данные об инциденте:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ok_button">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>730</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel_button">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>730</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

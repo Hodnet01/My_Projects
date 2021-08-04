@@ -1,0 +1,44 @@
+﻿<Window x:Class="ParkingAnalysisApplication.FindCar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParkingAnalysisApplication"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Title="Getting information to find the Car" 
+        Height="200" 
+        Width="550"
+        MaxHeight="200"
+        MaxWidth="600"
+        MinHeight="200"
+        MinWidth="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*" />
+            <ColumnDefinition Width="300*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="Bisque" BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2"/>
+
+        <TextBlock Text="Enter information about the car" HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="18" Margin="10 0 5 0" />
+        <TextBlock Name="TextBlockMode" Text="Find Car" Margin="5" FontSize="15"/>
+        <TextBlock Text="Car Number" Grid.Row="1" Margin="5"/>
+        <TextBlock Text="Car Owner`s name" Grid.Row="2" Margin="5"/>
+
+        <TextBox Name="TextBoxCarNumber" Height="30" Grid.Row="1" Grid.Column="1" Margin="5"/>
+        <TextBox Name="TextBoxOwnersName" Height="30" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            <Button Name="ButtonConformAddition" Height="30" Width="60" Cursor="Hand" Margin="5">Conform</Button>
+            <Button Name="ButtonCancelAddition" Height="30" Width="60" Cursor="Hand" Margin="5">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</Window>

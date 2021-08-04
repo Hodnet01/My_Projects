@@ -1,0 +1,75 @@
+﻿<Window x:Class="ParkingAnalysisApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParkingAnalysisApplication"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Parking Explorer" 
+        Height="600"
+		Width="800"
+		MinHeight="300"
+		MinWidth="500">
+
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400*" />
+            <ColumnDefinition Width="400*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="450*"/>
+            <RowDefinition Height="75"/>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="Black" Background="Bisque" BorderThickness="1" Grid.ColumnSpan="2" />
+
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+            <TextBlock Text="Instruments" FontSize="14" FontWeight="Bold" Margin="10 15 5 0" />
+            <Button Name="ButtonAddCar" Height="30" Width="80" Margin="10 0 5 0" Cursor="Hand">Add Car</Button>
+            <Button Name="ButtonFindCar" Height="30" Width="80" Margin="0 0 5 0" Cursor="Hand">Find Car</Button>
+            <Button Name="ButtonReservePlace" Height="30" Width="80" Margin="0 0 5 0" Cursor="Hand">Reserve Place</Button>
+            <Button Name="ButtonClearLogs" Height="30" Width="80" Margin="20 0 0 0">Clear Story</Button>
+        </StackPanel>
+
+
+
+
+        <TextBlock Text="Places" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 0"/>
+        <TextBlock Text="Floors" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 0"/>
+
+        <ListBox Name="ListBoxPlaces" Grid.Row="2" Grid.Column="0" Margin="10 0 0 0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Id}"/>
+                        <TextBlock Text="  |  "/>
+                        <TextBlock Text="{Binding StringState}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <ListBox Name="ListBoxFloors" Grid.Row="2" Grid.Column="1" Margin="0 0 10 0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Floor "/>
+                        <TextBlock Text="{Binding Id}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="0 0 0 10">
+            <Button Name="ButtonRemoveCar" Height="30" Width="110" Margin="10 0 5 0" Cursor="Hand">Remove Car</Button>
+            <Button Name="ButtonDeleteReservation" Height="30" Width="110" Margin="0 0 5 0" Cursor="Hand">Cancel Reservation</Button>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
